@@ -15,35 +15,53 @@
 	<div id="logo">
 		<a onclick="openmenu('one');return false;"> <img src="css/img/logo.png" alt="logo"/></a>
 	</div>
-	
-	<a href="#one" id="one" onclick="openmenu('one');return false;">Receptes</a>
-	<a id="logpop" onclick="logpop();return false;">Pieslēgties</a>	
-	<a href="#two" id="two" onclick="openmenu('two');return false;">Reģistrēties</a>
+	<div>
+		<a href="#one" id="one" onclick="openmenu('one');return false;">Receptes</a>
+		<a id="logpop" onclick="logpop();return false;">Pieslēgties</a>	
+		<a href="#two" id="two" onclick="openmenu('two');return false;">Reģistrēties</a>
+		
+		<input id="search" type="name" name="name" placeholder="Meklēt...">
+		<button for="search" id="search_button" type="submit">
+			<img src="css/img/search-arrow.png" alt="search"/>
+		</button>
+	</div>
 </nav>
 
 <section>
 
 	<div  id="sec_one">
 		<div id="sec_one_1" class="sectionParting leftFloat minheight">
-			Jaunākās receptes
+			<h1>Jaunākās receptes: <h1>
+			
+			<div class="rec_small">
+				Pirmā recepte
+			</div>
+			
+			<div class="rec_small">
+				Otrā recepte
+			</div>
+			
+			<div class="rec_small">
+				Trešā recepte
+			</div>
 		 
 		</div>
 		<div id="sec_one_2" class="sectionParting leftFloat minheight">
-			Meklē
+			Filtri
 		 
 		</div>
 	</div>
 
 	<div  id="sec_two" class="hide" class="sectionParting">
 		 <div id="sec_two_1" class="sectionParting">
-			<p>Lai reģistrētos "Ēdam kopā!" mājaslapā, aizpildat zemāk esošo registrācijas formu:</p>
+			<p>Lai reģistrētos "Ēdam kopā!" mājaslapā, aizpildat zemāk esošo reģistrācijas formu:</p>
 			<p><span class="reqstar">*</span> - obligāti aizpildāmie lauki</p>
 			<form id="reg_form">
 				<input class="reg_input" type="name" name="name" required placeholder="Lietotājvārds"><span class="reqstar">*</span>
 				<button class="reg_input" id="reg_check">Pārbaudīt</button><br>
 				<input class="reg_input" type="email" name="email" required placeholder="E-pasts"><span class="reqstar">*</span><br>
 				<div id="reg_checkbox" class="reg_input">
-					<input id="reg_ok" type="checkbox" name="checkbox">
+					<input id="reg_ok" type="checkbox" name="checkbox" required>
 					<label for="reg_ok"></label>
 					<a href="#" onclick="regpop();return false;">Piekrītu mājaslapas lietošanas noteikumiem </a>
 					<span class="reqstar">*</span><br>

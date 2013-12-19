@@ -83,7 +83,7 @@ animation-iteration-count: infinite;
 }
 
 #one, #two, #logpop{
-	margin: 1% 2% 0%;
+	margin: 0% 2%;
 	padding: 1%;
 	text-decoration: none;
 	font-family: 'Alegreya Sans SC', sans-serif;
@@ -103,6 +103,47 @@ animation-iteration-count: infinite;
 #logo img{
 	display:block;
 	margin: auto;
+	margin-bottom: 2%;
+}
+
+#search{
+	width: 40%;
+	margin:0%;
+	padding: 0.4%;
+	border: 5px solid rgba(35,32,18, 0.6);
+	position: relative;
+	background-color: rgba(255,255,255, 0.9);
+	background-clip: padding-box;
+	vertical-align: middle;
+}
+
+#search:focus{
+    outline: none;
+ }
+ 
+ #search_button{
+	width: 4%;
+	color: white;
+    font-weight: 900;
+	background: rgba(35,32,18, 0.8);
+	border: none;
+	margin:0%;
+	padding: 0.78% 0%;
+	vertical-align: middle;
+}
+
+#search_button:hover{
+	cursor: pointer;
+	background: rgba(255,255,255, 0.6);
+}
+
+#search_button:focus{
+    outline: none;
+ }
+
+#search_button img{
+	width: 85%;
+	
 }
 
 /*Section*/
@@ -112,8 +153,10 @@ section{
 }
 
 h1{
-	margin: 5%;
-	margin-bottom: 7%;
+	margin: 2%;
+	margin-bottom: 5%;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	text-transform: uppercase;
 }
 
 h2{
@@ -254,7 +297,10 @@ p{
     color: white;
     font-weight: 900;
 	background: rgba(35,32,18, 0.8);
-	padding:0%;
+	padding: 0.5% 0%;
+	font-size: 80%;
+	width: 15%;
+	text-align: center;
 }
 
 #reg_submit:hover, #reg_check:hover{
@@ -264,7 +310,9 @@ p{
 }
 
 #reg_submit{
-	margin: 2% 38% 1%;
+	font-size: 115%;
+	width: 25%;
+	margin: 5% 38% 3%;
 }
 
 #reg_ok{
@@ -338,6 +386,16 @@ p{
 	position: absolute;
 	display: block;
 }
+
+/*Recipe small new list style*/
+.rec_small{
+	width: 95%;
+	margin: 2% auto;
+	border: 2px solid rgba(35,32,18, 0.6);
+	
+}
+
+
 
 /*** FOOTER ***/
 footer{
